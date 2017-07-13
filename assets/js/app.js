@@ -1,3 +1,16 @@
+getJSON("data/earth-like-results.json")
+.then(function(mensaje){
+    return getJSON(mensaje.results.forEach(function(planeta){
+        getJSON(planeta).then(function(planeta){
+            creaTarjeta(planeta);
+            })
+        })
+)});
+
+function creaTarjeta(planeta){
+    console.log(planeta);
+}
+
 function getJSON(url) {
     return new Promise(function (resolve, reject) {
         var ajax = new XMLHttpRequest();
@@ -11,6 +24,3 @@ function getJSON(url) {
     });
 };
 
-getJSON("data/earth-like-results.json")
-.then(function(mensaje){return getJSON(mensaje.results[0])})
-.then(function(resultado){console.log(resultado)})
