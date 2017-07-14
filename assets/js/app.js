@@ -28,7 +28,7 @@ function creaTarjeta(planeta){
     creaCardContent.setAttribute("id", "cardContent" + indice);
     document.getElementById("cardType" + indice).appendChild(creaCardContent);
     var creaImgNode = document.createElement("IMG");
-    creaImgNode.setAttribute("src", "img_0" + indice + ".jpg");
+    creaImgNode.setAttribute("src", "/assets/img/img_0" + indice + ".jpg");
     document.getElementById("cardImage" + indice).appendChild(creaImgNode);
     var creaParagraphNode = document.createElement("P");
     creaParagraphNode.setAttribute("id", "cardParagraph" + indice);
